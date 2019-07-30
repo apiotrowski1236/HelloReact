@@ -8,12 +8,28 @@
     <script crossorigin src = "https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <!--Add a reference to the Babel JavaScript compiler, which turns JSX into JavaScript-->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<style>
+    #container {
+        padding: 50px;
+        background-color: #EEE;
+    }
+    #container h1 {
+        font-size: 144px;
+        font-family: sans-serif;
+        color: #0080a8;
+    }
+
+</style>
+
+
+
 </head>
 <body>
+    <div id="container"></div>
     <script type="text/babel">
     ReactDOM.render(
         <h1>Detective Dale Cooper</h1>,
-        document.body
+        document.querySelector("#container")
     );
     </script>
 </body>
